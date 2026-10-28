@@ -1,0 +1,208 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e8;
+    margin: 0;
+    padding: 30px;
+    color: #263445;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: #6c3fc5;
+    text-align: center;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px #d9e1ea;
+}
+
+.card h2 {
+    color: #2457a7;
+}
+
+.footer {
+    text-align: center;
+    color: #64748b;
+    margin-top: 30px;
+}
+
+input {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 14px;
+    background-color: #2457a7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #173f80;
+}
+
+li {
+    margin-top: 12px;
+    padding: 8px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+#taskFilter {
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+.task-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #f0f4f8;
+    border-radius: 6px;
+}
+
+.task-row input {
+    width: auto;
+}
+
+.task-name {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #64748b;
+}
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#subjectInput,
+#dueDate {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+#taskInput {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#addButton {
+    margin-top: 12px;
+}
+
+.task-details {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Make the planner fit smaller screens */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+input,
+select {
+    max-width: 100%;
+}
+
+/* Mobile phone layout */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    #taskInput,
+    #subjectInput,
+    #dueDate,
+    #taskFilter {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    #addButton {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px;
+    }
+
+    .task-row {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .task-name {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .delete-button {
+        margin-left: auto;
+    }
+
+    #progressText,
+    #percentageText {
+        overflow-wrap: anywhere;
+    }
+}

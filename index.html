@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Productivity Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Productivity Planner</h1>
+
+        <p class="welcome">
+            Welcome! Organize your studies and manage your tasks.
+        </p>
+
+        
+
+<div class="card">
+    <h2>My Study Tasks</h2>
+
+    <label for="taskInput">Task Name</label>
+    <input type="text" id="taskInput"
+           placeholder="Enter your study task">
+
+    <label for="subjectInput">Subject</label>
+    <select id="subjectInput">
+        <option value="Java">Java</option>
+        <option value="DBMS">DBMS</option>
+        <option value="Operating Systems">Operating Systems</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="dueDate">Due Date</label>
+    <input type="date" id="dueDate">
+
+    <button id="addButton">Add Task</button>
+
+    <h3>My Progress</h3>
+    <p id="progressText">Total: 0 | Completed: 0 | Pending: 0</p>
+    <p id="percentageText">Completion: 0%</p>
+
+    <label for="taskFilter">Show Tasks:</label>
+    <select id="taskFilter">
+        <option value="all">All Tasks</option>
+        <option value="pending">Pending Tasks</option>
+        <option value="completed">Completed Tasks</option>
+    </select>
+
+    <ul id="taskList"></ul>
+</div>
+
+
+        <div class="card">
+            <h2>My Progress</h2>
+            <p>Keep working towards your goals!</p>
+        </div>
+
+        <p class="footer">
+            Plan better. Study smarter. Achieve more!
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
